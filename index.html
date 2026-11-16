@@ -45,7 +45,30 @@
     .card h3 { margin-top: 0; }
     .tag { color: var(--accent); font-size: 13px; font-weight: bold; }
     footer { padding: 35px; text-align: center; color: var(--muted); font-size: 13px; }
-  </style>
+  
+/* About section */
+.about-content {
+  max-width: 760px;
+  line-height: 2;
+}
+
+.about-content p {
+  margin: 0 0 24px;
+}
+
+.about-content .profile-link {
+  margin-top: 32px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* スマホでは自然に折り返す */
+@media (max-width: 768px) {
+  .desktop-break {
+    display: none;
+  }
+}
+</style>
 </head>
 <body>
   <header><div class="brand">PAHU Creative</div></header>
@@ -58,36 +81,40 @@
         PAHU Creativeのポートフォリオです。
       </p>
     </section>
-
-    <section>
+    
+<section class="about-section">
   <h2>About</h2>
 
-  <p>
-    はじめまして。PAHU Creativeとして、
-    WebライティングやSNSコンテンツ制作を中心に活動しています。
-  </p>
+  <div class="about-content">
+    <p>
+      はじめまして。PAHU Creativeとして、<br class="desktop-break">
+      WebライティングやSNSコンテンツ制作を中心に活動しています。
+    </p>
 
-  <p>
-    アメブロで300記事以上、WordPressで数十記事の執筆経験があり、
-    SNS投稿の企画・画像制作・ショート動画編集にも携わってきました。
-  </p>
+    <p>
+      アメブロで300記事以上、WordPressで数十記事を執筆。<br class="desktop-break">
+      SNS投稿の企画・画像制作・ショート動画編集にも携わってきました。
+    </p>
 
-  <p>
-    セラピストやヨガトレーナー、接客、
-    イベント現場のディレクションなど、
-    さまざまな仕事を経験してきたことも私の強みです。
-  </p>
+    <p>
+      セラピストやヨガトレーナー、接客、イベント現場のディレクションなど、<br class="desktop-break">
+      さまざまな仕事を経験してきたことも私の強みです。
+    </p>
 
-  <p>
-    読み手に伝わる構成と、相手に寄り添い、
-    お互いが心地よい関係を築けるコミュニケーションを大切にしながら、
-    ライティング・SNS制作・進行管理・顧客対応などの
-    在宅業務に取り組んでいます。
-  </p>
+    <p>
+      読み手に伝わる構成と、相手に寄り添い、<br class="desktop-break">
+      お互いが心地よい関係を築けるコミュニケーションを大切にしています。
+    </p>
 
-  <p>
-    詳しいプロフィールは近日公開予定です。
-  </p>
+    <p>
+      現在はライティング・SNS制作・進行管理・顧客対応など、<br class="desktop-break">
+      幅広い在宅業務に取り組んでいます。
+    </p>
+
+    <p class="profile-link">
+      詳しいプロフィールは近日公開予定です。
+    </p>
+  </div>
 </section>
 
 　　<section>
